@@ -1,18 +1,16 @@
 // Vercel Serverless API - Verify player score for Somnia Quest
 // Endpoint: GET /api/verify?wallet=0x...
 
-import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { createClient } from '@supabase/supabase-js';
 
 // Initialize Supabase client
 const supabaseUrl = process.env.SUPABASE_URL || '';
 const supabaseKey = process.env.SUPABASE_ANON_KEY || '';
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 // Quest threshold - score needed to complete quest
 const QUEST_SCORE_THRESHOLD = 5000;
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req, res) {
     // Enable CORS
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
@@ -28,7 +26,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     try {
         // Get wallet address from query parameter (case-insensitive)
-        const wallet = (req.query.wallet as string)?.toLowerCase();
+        const wallet = req.query.wallet?.toLowerCase();
 
         if (!wallet) {
             return res.status(400).json({ error: 'Wallet address required' });
@@ -38,6 +36,18 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         if (!/^0x[a-fA-F0-9]{40}$/.test(wallet)) {
             return res.status(400).json({ error: 'Invalid wallet address format' });
         }
+
+        // If Supabase is not configured, return mock data for testing
+        if (!supabaseUrl || !supabaseKey) {
+            return res.status(200).json({
+                wallet: wallet,
+                score: 0,
+                completed: false,
+                note: 'Supabase not configured'
+            });
+        }
+
+        const supabase = createClient(supabaseUrl, supabaseKey);
 
         // Query Supabase for player progress
         const { data, error } = await supabase

@@ -1,19 +1,16 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "api/**/*.ts",
-            "use": "@vercel/node"
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "framework": "vite",
+    "functions": {
+        "api/*.ts": {
+            "runtime": "@vercel/node@3"
         }
-    ],
-    "routes": [
+    },
+    "rewrites": [
         {
-            "src": "/api/(.*)",
-            "dest": "/api/$1"
+            "source": "/api/:path*",
+            "destination": "/api/:path*"
         }
-    ],
-    "env": {
-        "SUPABASE_URL": "@supabase-url",
-        "SUPABASE_ANON_KEY": "@supabase-anon-key"
-    }
+    ]
 }

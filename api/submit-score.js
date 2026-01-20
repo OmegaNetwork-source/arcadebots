@@ -1,24 +1,13 @@
 // Vercel Serverless API - Submit/Update player score
 // Endpoint: POST /api/submit-score
-// Body: { wallet: string, totalScore: number, highScore: number, bossesDefeated: number, gamesPlayed: number }
 
-import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { createClient } from '@supabase/supabase-js';
 
 // Initialize Supabase client
 const supabaseUrl = process.env.SUPABASE_URL || '';
 const supabaseKey = process.env.SUPABASE_ANON_KEY || '';
-const supabase = createClient(supabaseUrl, supabaseKey);
 
-interface ScoreSubmission {
-    wallet: string;
-    totalScore: number;
-    highScore: number;
-    bossesDefeated: number;
-    gamesPlayed: number;
-}
-
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req, res) {
     // Enable CORS
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -33,7 +22,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     try {
-        const body: ScoreSubmission = req.body;
+        const body = req.body;
 
         // Validate required fields
         if (!body.wallet) {
@@ -47,6 +36,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         if (!/^0x[a-fA-F0-9]{40}$/.test(wallet)) {
             return res.status(400).json({ error: 'Invalid wallet address format' });
         }
+
+        // If Supabase is not configured, return success for testing
+        if (!supabaseUrl || !supabaseKey) {
+            return res.status(200).json({
+                success: true,
+                wallet: wallet,
+                message: 'Supabase not configured - score not saved'
+            });
+        }
+
+        const supabase = createClient(supabaseUrl, supabaseKey);
 
         // Validate score values
         const totalScore = Math.max(0, Math.floor(body.totalScore || 0));
