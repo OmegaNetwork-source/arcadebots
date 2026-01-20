@@ -1,0 +1,1038 @@
+{
+  "animation_json": {
+    "files": [
+      {
+        "url": "assets/animations.json",
+        "type": "animation",
+        "key": "animations"
+      }
+    ]
+  },
+  "fonts": {
+    "files": [
+      {
+        "url": "assets/fronts/retro-pixel-arcade.otf.woff2",
+        "type": "font",
+        "key": "RetroPixel",
+        "fontType": "opentype"
+      },
+      {
+        "url": "assets/fronts/supercell-magic_0.ttf",
+        "type": "font",
+        "key": "SupercellMagic",
+        "fontType": "opentype"
+      }
+    ]
+  },
+  "player_animations": {
+    "files": [
+      {
+        "type": "image",
+        "key": "arcade_bot_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/6d289273-ddb4-42a0-b069-3bbe09b4828a/animations/arcade_bot_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "arcade_bot_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/06ef9447-ac29-4618-a1b4-2615db4604ee/animations/arcade_bot_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "arcade_bot_walk_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/140d1d2c-1b49-4248-9762-e2fe2d8401d9/animations/arcade_bot_walk_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "arcade_bot_walk_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/fb658dd9-d8c8-4fc8-90a8-d3f047d00956/animations/arcade_bot_walk_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "arcade_bot_jump_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/a78a4412-d83a-49df-be8b-e58923f0adf8/animations/arcade_bot_jump_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "arcade_bot_jump_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/61656560-3112-46cd-aa81-a8cbdee60808/animations/arcade_bot_jump_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "arcade_bot_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/826ea0d1-0312-4130-9ed1-792d876ada9b/animations/arcade_bot_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "arcade_bot_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/84c27cc0-033c-4b63-9ca2-7d9804a557ef/animations/arcade_bot_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "arcade_bot_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/625edd3a-b0b2-4c54-87fa-feb2abf1e023/animations/arcade_bot_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "arcade_bot_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/0c9358e0-bd97-46cc-8c9e-83cf5dea1943/animations/arcade_bot_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "fire_arcade_bot_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/31388c66-d940-44ad-a53c-2ac41ef33872/animations/fire_arcade_bot_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "fire_arcade_bot_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/e23434a6-7fa1-4c14-b73d-44fc49009ea9/animations/fire_arcade_bot_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "fire_arcade_bot_walk_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/b071db72-2be1-4cd3-a6fc-482d0d9c445e/animations/fire_arcade_bot_walk_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "fire_arcade_bot_walk_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/dca4d6f4-08c4-40df-82b3-32646186dd8f/animations/fire_arcade_bot_walk_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "fire_arcade_bot_jump_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/e297a2e0-bc1b-4f33-8b96-2676393cec08/animations/fire_arcade_bot_jump_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "fire_arcade_bot_jump_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/2614373a-2441-4a79-893a-b487b647e995/animations/fire_arcade_bot_jump_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "fire_arcade_bot_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/ddbb2dbb-f161-446e-ac8d-a51f45cdc92a/animations/fire_arcade_bot_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "fire_arcade_bot_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/b3d52c87-b340-4bf5-9a6d-e637ef274fb1/animations/fire_arcade_bot_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "fire_arcade_bot_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/00687833-0cf9-4a5c-b912-e4b471b9c186/animations/fire_arcade_bot_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "fire_arcade_bot_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/8bc05681-180e-4c2a-9756-dbdb4b5c49a6/animations/fire_arcade_bot_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "ice_arcade_bot_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/24d07cfd-85f3-4c63-aa13-5c3d5943addf/animations/ice_arcade_bot_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "ice_arcade_bot_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/ff5cdfb4-8712-4daf-91b2-5ae0714d38ed/animations/ice_arcade_bot_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "ice_arcade_bot_walk_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/d8529c72-6a02-4857-a50f-a07be6c37c46/animations/ice_arcade_bot_walk_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "ice_arcade_bot_walk_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/573dfcec-55e0-48af-b281-2f72f246ab9a/animations/ice_arcade_bot_walk_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "ice_arcade_bot_jump_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/112c20d7-e7e9-473b-a02e-c78ae25f2ca5/animations/ice_arcade_bot_jump_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "ice_arcade_bot_jump_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/23f99aa4-e05d-40af-933f-e9ffc308c36b/animations/ice_arcade_bot_jump_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "ice_arcade_bot_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/f227086a-8354-4630-8554-4be88cc0544f/animations/ice_arcade_bot_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "ice_arcade_bot_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/1badb827-7db0-455a-a223-2785a045fcd6/animations/ice_arcade_bot_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "ice_arcade_bot_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/edf5241a-404b-46be-a422-23d120fcb59b/animations/ice_arcade_bot_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "ice_arcade_bot_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/b16af5ea-3fa0-4035-9b40-998096e4bc22/animations/ice_arcade_bot_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "shadow_arcade_bot_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/33a78699-2d61-4857-afae-14a561d74bad/animations/shadow_arcade_bot_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "shadow_arcade_bot_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/710e7c96-aaf5-4310-9ce3-d001cf288f73/animations/shadow_arcade_bot_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "shadow_arcade_bot_walk_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/dff35f79-df03-4a45-b6d4-be7b02a79f9e/animations/shadow_arcade_bot_walk_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "shadow_arcade_bot_walk_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/56b3617e-7ed7-42a2-88c7-1e1892b99117/animations/shadow_arcade_bot_walk_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "shadow_arcade_bot_jump_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/0ec461ac-3d3d-4300-a0da-b0e7455656f7/animations/shadow_arcade_bot_jump_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "shadow_arcade_bot_jump_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/ff71738e-e46b-4535-b427-db8ae3aff691/animations/shadow_arcade_bot_jump_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "shadow_arcade_bot_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/4dc15808-e478-42ea-9f6f-6177055cec69/animations/shadow_arcade_bot_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "shadow_arcade_bot_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/a448be5f-f9a1-4068-9a8e-c559b9dbf95e/animations/shadow_arcade_bot_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "shadow_arcade_bot_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/f1d6dd4f-1c0f-4f25-97d1-254d73c12a23/animations/shadow_arcade_bot_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "shadow_arcade_bot_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/6fd88f78-1103-4be0-94ad-ade1061365ad/animations/shadow_arcade_bot_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "lightning_arcade_bot_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/97103d8f-d72f-47ba-af74-349fc4609d2b/animations/lightning_arcade_bot_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "lightning_arcade_bot_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/9d645ae4-ee38-4d65-ae90-fd6bd7263b7c/animations/lightning_arcade_bot_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "lightning_arcade_bot_walk_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/0a6fbc0a-bcba-446c-9dec-5fc8d19b25b3/animations/lightning_arcade_bot_walk_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "lightning_arcade_bot_walk_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/69e12f84-2767-4a20-8f84-d1a848ac0bc6/animations/lightning_arcade_bot_walk_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "lightning_arcade_bot_jump_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/f9026785-9a6d-45aa-a110-8f3ff94f0772/animations/lightning_arcade_bot_jump_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "lightning_arcade_bot_jump_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/7100031d-ca46-4d69-a591-3a911d34d665/animations/lightning_arcade_bot_jump_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "lightning_arcade_bot_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/4134a106-9baa-4986-ba7e-841febbd799c/animations/lightning_arcade_bot_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "lightning_arcade_bot_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/bd036f1b-83b8-4fcc-a1eb-13abd506ef94/animations/lightning_arcade_bot_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "lightning_arcade_bot_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/58ba30f8-ad5b-4d5b-b60a-eb432d464b58/animations/lightning_arcade_bot_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "lightning_arcade_bot_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/d10a17b4-8491-4771-854e-25ca43e560aa/animations/lightning_arcade_bot_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "nature_arcade_bot_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/58db14c2-6147-4eae-8845-2ab20bfef92b/animations/nature_arcade_bot_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "nature_arcade_bot_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/f5ab9003-8f12-46b4-86ed-397d968f7df0/animations/nature_arcade_bot_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "nature_arcade_bot_walk_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/5eceee55-1a34-4342-b798-89613b15581a/animations/nature_arcade_bot_walk_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "nature_arcade_bot_walk_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/631db5ed-ec83-4c6a-8440-40be7edc3620/animations/nature_arcade_bot_walk_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "nature_arcade_bot_jump_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/d9e2ca65-0bca-490a-a694-5663aa8148d6/animations/nature_arcade_bot_jump_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "nature_arcade_bot_jump_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/d5283076-5e3d-43b3-975d-fa48913d85e3/animations/nature_arcade_bot_jump_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "nature_arcade_bot_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/80a8f74d-7b82-42ba-8f1c-37eeab5c17f3/animations/nature_arcade_bot_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "nature_arcade_bot_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/1219e3ea-09d9-4cdf-89f9-0d0431304918/animations/nature_arcade_bot_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "nature_arcade_bot_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/e3d99c1c-b718-491c-8cd4-4ed527aaa2ac/animations/nature_arcade_bot_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "nature_arcade_bot_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/cfd48d2c-7ee3-47a6-8301-9f3b8b08d97c/animations/nature_arcade_bot_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "cosmic_arcade_bot_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/33ee6eb9-4911-449f-9b19-85cc19cc7ba7/animations/cosmic_arcade_bot_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "cosmic_arcade_bot_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/42a5dab6-fe85-495b-acee-4efa8643ed06/animations/cosmic_arcade_bot_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "cosmic_arcade_bot_walk_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/1d2fbb89-a048-4859-b802-cda697ee1621/animations/cosmic_arcade_bot_walk_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "cosmic_arcade_bot_walk_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/b89dc6a3-3608-4f03-9804-766fddda3e4a/animations/cosmic_arcade_bot_walk_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "cosmic_arcade_bot_jump_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/6e027338-d684-4b69-9072-e968f787eac5/animations/cosmic_arcade_bot_jump_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "cosmic_arcade_bot_jump_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/e9b8656f-ed9e-4663-929a-3e8760416c1c/animations/cosmic_arcade_bot_jump_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "cosmic_arcade_bot_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/e8dc2a07-e0e3-4fac-ab8f-62a1c2a55398/animations/cosmic_arcade_bot_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "cosmic_arcade_bot_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/5d1b9cfa-a075-445f-9595-eed964f677e2/animations/cosmic_arcade_bot_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "cosmic_arcade_bot_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/8f524b40-9381-4688-bca8-a6f49cd3a71b/animations/cosmic_arcade_bot_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "cosmic_arcade_bot_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/0854b45f-a143-44ae-8f95-eec5f287d5e7/animations/cosmic_arcade_bot_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "goku_arcade_bot_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/f67e2be2-7fbf-4972-8159-c99b02efdb8a/animations/goku_arcade_bot_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "goku_arcade_bot_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/1ea31356-07b3-4e44-8d03-61d6f78ebe8b/animations/goku_arcade_bot_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "goku_arcade_bot_walk_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/0a76b616-fb59-40d9-bec9-4c53c595dee8/animations/goku_arcade_bot_walk_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "goku_arcade_bot_walk_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/2d8a1018-e79b-4ed3-8969-140dcb6258b7/animations/goku_arcade_bot_walk_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "goku_arcade_bot_jump_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/d7c4a325-3ca4-4e7e-a3ed-30eac943cfa7/animations/goku_arcade_bot_jump_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "goku_arcade_bot_jump_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/4e4512da-e1b1-4040-a9f9-1dc5a2523501/animations/goku_arcade_bot_jump_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "goku_arcade_bot_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/ff640263-ef4f-4c04-b900-71aaf3b0784c/animations/goku_arcade_bot_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "goku_arcade_bot_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/b0254208-c0c2-43f6-88d1-85ece53a97bd/animations/goku_arcade_bot_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "goku_arcade_bot_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/c01af3c4-9a86-47ca-85ed-643083a35bc5/animations/goku_arcade_bot_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "goku_arcade_bot_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/5c8c282e-d93c-4fb1-bac3-484fac82eac9/animations/goku_arcade_bot_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "grim_reaper_arcade_bot_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/8dafc803-7251-4135-8f88-3ca51de63a19/animations/grim_reaper_arcade_bot_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "grim_reaper_arcade_bot_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/52523850-f4cc-4004-969f-224c1e17a35e/animations/grim_reaper_arcade_bot_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "grim_reaper_arcade_bot_walk_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/77518e72-d29f-471a-8fe8-8137fa0030b2/animations/grim_reaper_arcade_bot_walk_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "grim_reaper_arcade_bot_walk_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/abeba6c0-6639-4f8d-91dc-97122a7d01b1/animations/grim_reaper_arcade_bot_walk_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "grim_reaper_arcade_bot_jump_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/2d22e56e-0525-4793-971d-b792d5acd14a/animations/grim_reaper_arcade_bot_jump_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "grim_reaper_arcade_bot_jump_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/483be3fd-d102-463f-a47b-a6c02289f666/animations/grim_reaper_arcade_bot_jump_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "grim_reaper_arcade_bot_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/07df766a-0cc1-41c3-8b9c-f1dd00a66936/animations/grim_reaper_arcade_bot_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "grim_reaper_arcade_bot_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/bfbdc6ac-1d5d-4c90-a251-b80e381f75f3/animations/grim_reaper_arcade_bot_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "grim_reaper_arcade_bot_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/98a5fe1e-bb29-4eb0-b656-9c3dcf0d5ebe/animations/grim_reaper_arcade_bot_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "grim_reaper_arcade_bot_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/b011386b-59cf-4604-8455-20b5e158cc96/animations/grim_reaper_arcade_bot_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "angel_arcade_bot_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/a86235cc-2a3f-44cb-ba46-7ce3f56ceee7/animations/angel_arcade_bot_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "angel_arcade_bot_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/4a0fa3ef-6b00-4666-8e7f-00179dcf82ef/animations/angel_arcade_bot_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "angel_arcade_bot_walk_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/04d043d2-ec4e-4a46-9449-301e21ae3a40/animations/angel_arcade_bot_walk_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "angel_arcade_bot_walk_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/cbf24400-cab1-4b99-b5aa-0cfd4b7b8e8a/animations/angel_arcade_bot_walk_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "angel_arcade_bot_jump_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/b797f266-4480-48c4-91c8-aa6674118d0f/animations/angel_arcade_bot_jump_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "angel_arcade_bot_jump_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/58d7d004-bbd8-4d59-bc53-c8069968eecf/animations/angel_arcade_bot_jump_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "angel_arcade_bot_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/ddd34ec4-9310-4759-b0d8-649be557b219/animations/angel_arcade_bot_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "angel_arcade_bot_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/cf50d83c-6a97-4571-97c1-891419ac9adc/animations/angel_arcade_bot_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "angel_arcade_bot_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/f4057cdd-9b86-4c65-a5d7-4a9471e6da37/animations/angel_arcade_bot_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "angel_arcade_bot_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/2187031f-627a-4997-9642-3241dcc58c97/animations/angel_arcade_bot_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "devil_arcade_bot_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/a6522607-c925-4b14-9ceb-0b56b7eb2bdd/animations/devil_arcade_bot_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "devil_arcade_bot_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/06709de8-d891-484f-9948-8ef6e95b2723/animations/devil_arcade_bot_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "devil_arcade_bot_walk_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/7c2082e7-9a0b-451d-b925-22cfe3f4c525/animations/devil_arcade_bot_walk_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "devil_arcade_bot_walk_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/0aa31fbb-9c46-48e1-8d82-090dd9be751b/animations/devil_arcade_bot_walk_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "devil_arcade_bot_jump_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/f070788c-76b7-4397-9201-27c8ba3dcb63/animations/devil_arcade_bot_jump_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "devil_arcade_bot_jump_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/a530626b-185f-41ed-a3a2-b25b849afa46/animations/devil_arcade_bot_jump_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "devil_arcade_bot_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/c3c6c368-6766-42fb-9edb-5a3b99b6ef51/animations/devil_arcade_bot_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "devil_arcade_bot_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/d56fd6d1-199f-46f7-a673-8fd769af6de4/animations/devil_arcade_bot_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "devil_arcade_bot_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/f1a16915-14d5-4f44-8e9f-4e7064a8909c/animations/devil_arcade_bot_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "devil_arcade_bot_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/489076ef-cf5b-4460-af8e-fce0e29789af/animations/devil_arcade_bot_die_R/frame_2.png"
+      }
+    ]
+  },
+  "enemy_animations": {
+    "files": [
+      {
+        "type": "image",
+        "key": "bug_enemy_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/f82fff01-f65d-4aea-a91e-02d81cd1b7e3/animations/bug_enemy_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "bug_enemy_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/e6cf4520-a490-4a2e-a203-06ce242e5774/animations/bug_enemy_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "bug_enemy_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/204687db-e278-4e79-be25-b7431803d110/animations/bug_enemy_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "bug_enemy_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/ca617c68-47de-4072-87ab-cf22c24416b3/animations/bug_enemy_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "bug_enemy_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/654a6de1-fb83-49a7-ab9f-deb8b939beff/animations/bug_enemy_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "bug_enemy_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/0538b49a-313f-4018-b8f0-ee4f56dc8ee7/animations/bug_enemy_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "flying_bat_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/0e6ddbaa-5a58-4f02-a00f-c17146d7b3d0/animations/flying_bat_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "flying_bat_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/7ddff3bc-161a-48be-9377-b0cb6d535504/animations/flying_bat_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "flying_bat_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/eabe62f2-03a3-43c6-a4c5-293eca711329/animations/flying_bat_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "flying_bat_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/c00d9835-b8f8-4f38-8f9f-853a17ea42e8/animations/flying_bat_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "flying_bat_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/3bd9c8de-d728-430c-ad98-4bd414f34474/animations/flying_bat_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "flying_bat_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/fe097dda-bd1b-4d7b-b458-ca59f0a3fdca/animations/flying_bat_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "slime_crawler_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/da430a8a-33c0-4fc0-a8b8-177a710c4b4f/animations/slime_crawler_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "slime_crawler_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/8bdbb099-c9c5-4b7a-adfa-85013a48c45e/animations/slime_crawler_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "slime_crawler_attack_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/88d7b9d0-2d66-48ad-8c94-ff35ba939e3c/animations/slime_crawler_attack_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "slime_crawler_attack_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/3d46d43f-598c-45eb-91ef-ccd20c628843/animations/slime_crawler_attack_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "slime_crawler_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/184608c0-b6fc-44f8-9296-ab62b58d7f81/animations/slime_crawler_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "slime_crawler_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/3c7164d1-9364-4e2a-a38e-5c731e61421f/animations/slime_crawler_die_R/frame_2.png"
+      }
+    ]
+  },
+  "tilemaps": {
+    "files": [
+      {
+        "type": "tilemapTiledJSON",
+        "key": "cave_level_1",
+        "url": "https://cdn-game-mcp.gambo.ai/d725fac9-6dea-4238-babe-f09f799af58a/tile_maps/cave_level_1.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "cave_level_2",
+        "url": "https://cdn-game-mcp.gambo.ai/b4e4bd18-46e8-4e40-b90b-6ceca2d2c6de/tile_maps/cave_level_2.json"
+      }
+    ]
+  },
+  "tilesets": {
+    "files": [
+      {
+        "type": "image",
+        "key": "cave_ground_tileset",
+        "url": "https://cdn-game-mcp.gambo.ai/9da12ea3-9a2f-46bf-a2ab-75d6f525a223/tilesets/cave_ground_tileset.png"
+      }
+    ]
+  },
+  "backgrounds": {
+    "files": [
+      {
+        "type": "image",
+        "key": "hollow_cave_background",
+        "url": "https://cdn-game-mcp.gambo.ai/85b616cb-0f03-4cd0-9068-67934773169d/images/hollow_cave_background.png"
+      }
+    ]
+  },
+  "ui_images": {
+    "files": [
+      {
+        "type": "image",
+        "key": "arcade_bot_game_title",
+        "url": "https://cdn-game-mcp.gambo.ai/fb0bc11b-62ec-45cf-8642-a67543ae46b4/images/arcade_bot_game_title.png"
+      },
+      {
+        "type": "image",
+        "key": "arcade_bot_characters",
+        "url": "https://cdn-game-mcp.gambo.ai/878c6d81-687d-48e3-b121-1cdc70cec9ce/uploads/878c6d81-687d-48e3-b121-1cdc70cec9ce.png"
+      }
+    ]
+  },
+  "decorations": {
+    "files": [
+      {
+        "type": "image",
+        "key": "cave_mushroom_variant_1",
+        "url": "https://cdn-game-mcp.gambo.ai/ec43b176-513a-4cc4-ab1b-685fcd3ef102/images/cave_mushroom/variant_1.png"
+      },
+      {
+        "type": "image",
+        "key": "cave_mushroom_variant_2",
+        "url": "https://cdn-game-mcp.gambo.ai/eb574454-3f18-4578-9784-479e284e66c6/images/cave_mushroom/variant_2.png"
+      },
+      {
+        "type": "image",
+        "key": "cave_mushroom_variant_3",
+        "url": "https://cdn-game-mcp.gambo.ai/c714d3d2-d964-4db7-b982-f1b6789bea34/images/cave_mushroom/variant_3.png"
+      },
+      {
+        "type": "image",
+        "key": "cave_crystal_variant_1",
+        "url": "https://cdn-game-mcp.gambo.ai/480a9d94-d364-4ad5-a7a8-62ed7f5c870f/images/cave_crystal/variant_1.png"
+      },
+      {
+        "type": "image",
+        "key": "cave_crystal_variant_2",
+        "url": "https://cdn-game-mcp.gambo.ai/64194ca1-1fcb-421c-ab31-2a0942ae2e93/images/cave_crystal/variant_2.png"
+      },
+      {
+        "type": "image",
+        "key": "cave_crystal_variant_3",
+        "url": "https://cdn-game-mcp.gambo.ai/92eaa6ea-4cef-4b88-a7d7-49e72670d1da/images/cave_crystal/variant_3.png"
+      },
+      {
+        "type": "image",
+        "key": "ancient_pillar_variant_1",
+        "url": "https://cdn-game-mcp.gambo.ai/617770a0-791d-412f-8b86-69e41bbe3924/images/ancient_pillar/variant_1.png"
+      },
+      {
+        "type": "image",
+        "key": "ancient_pillar_variant_2",
+        "url": "https://cdn-game-mcp.gambo.ai/a96f0429-0435-4030-845d-f258735d3940/images/ancient_pillar/variant_2.png"
+      },
+      {
+        "type": "image",
+        "key": "bone_pile_variant_1",
+        "url": "https://cdn-game-mcp.gambo.ai/95756b03-dce8-4fd2-8aa5-878f8110b715/images/bone_pile/variant_1.png"
+      },
+      {
+        "type": "image",
+        "key": "bone_pile_variant_2",
+        "url": "https://cdn-game-mcp.gambo.ai/4c23a367-4ad6-4a5e-b910-6dfc811a6fa8/images/bone_pile/variant_2.png"
+      },
+      {
+        "type": "image",
+        "key": "bone_pile_variant_3",
+        "url": "https://cdn-game-mcp.gambo.ai/07fb8ce3-b0ae-4325-a128-9b4c3d878de3/images/bone_pile/variant_3.png"
+      }
+    ]
+  },
+  "effects": {
+    "files": [
+      {
+        "type": "image",
+        "key": "blood_particle",
+        "url": "https://cdn-game-mcp.gambo.ai/c75a9a07-2ee0-4a98-9586-f83ad56a82ab/images/blood_particle.png"
+      }
+    ]
+  },
+  "weapons": {
+    "files": [
+      {
+        "type": "image",
+        "key": "arcade_bot_sword",
+        "url": "https://cdn-game-mcp.gambo.ai/b0429bd1-40f6-4684-b2b6-6d620a632563/images/arcade_bot_sword.png"
+      },
+      {
+        "type": "image",
+        "key": "arcade_bot_bullet",
+        "url": "https://cdn-game-mcp.gambo.ai/c5c783c1-0398-4ad7-980d-65b65c5a0538/images/arcade_bot_bullet.png"
+      },
+      {
+        "type": "image",
+        "key": "gun_pickup",
+        "url": "https://cdn-game-mcp.gambo.ai/cc56ba07-5501-4c03-946f-a9bbff38f3b5/images/gun_pickup.png"
+      }
+    ]
+  },
+  "pickups": {
+    "files": [
+      {
+        "type": "image",
+        "key": "health_pack",
+        "url": "https://cdn-game-mcp.gambo.ai/dffc2778-f881-4491-bd02-6e58c2073f97/images/health_pack.png"
+      },
+      {
+        "type": "image",
+        "key": "jetpack_pickup",
+        "url": "https://cdn-game-mcp.gambo.ai/61a81f18-4196-497f-812a-8b5b54e06d61/images/jetpack_pickup.png"
+      },
+      {
+        "type": "image",
+        "key": "level_exit_arrow",
+        "url": "https://cdn-game-mcp.gambo.ai/11e038f7-a3a9-427e-a72d-b45e10fe23e1/images/level_exit_arrow.png"
+      }
+    ]
+  },
+  "sound_effects": {
+    "files": [
+      {
+        "type": "audio",
+        "key": "ui_click",
+        "url": "https://cdn-game-mcp.gambo.ai/d1063705-d638-474e-905b-f463e03e20e6/sound_effects/ui_click.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "game_over_sound",
+        "url": "https://cdn-game-mcp.gambo.ai/6e70eb80-ee02-4024-9856-2e4e4e028d5f/sound_effects/game_over_sound.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "sword_slash",
+        "url": "https://cdn-game-mcp.gambo.ai/62107c8d-b764-47d7-8090-5689e43c8f6b/sound_effects/sword_slash.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "player_jump",
+        "url": "https://cdn-game-mcp.gambo.ai/36969ee3-28eb-4a53-b21f-960a563daaa7/sound_effects/player_jump.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "player_hurt",
+        "url": "https://cdn-game-mcp.gambo.ai/be1fb2a3-f8c5-47da-967c-dc5fdb1172a0/sound_effects/player_hurt.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "player_die",
+        "url": "https://cdn-game-mcp.gambo.ai/f57d9533-7a09-4230-9acb-721ea123a83e/sound_effects/player_die.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "enemy_hurt",
+        "url": "https://cdn-game-mcp.gambo.ai/cf241b8f-6ce8-47de-8712-fed5f6e1c27d/sound_effects/enemy_hurt.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "enemy_die",
+        "url": "https://cdn-game-mcp.gambo.ai/7a7e304c-ac2a-411b-a1aa-93f852b87041/sound_effects/enemy_die.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "enemy_attack",
+        "url": "https://cdn-game-mcp.gambo.ai/32fd55ad-ba0f-406d-9489-ae30665e2718/sound_effects/enemy_attack.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "level_complete",
+        "url": "https://cdn-game-mcp.gambo.ai/d34bbcf0-6ba7-4137-9a0f-5f7371429b30/sound_effects/level_complete.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "health_pickup",
+        "url": "https://cdn-game-mcp.gambo.ai/bb5204e5-2f20-4f70-b5d6-c54a64972f9d/sound_effects/health_pickup.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "weapon_pickup",
+        "url": "https://cdn-game-mcp.gambo.ai/2fdf071c-9b7a-4e4b-bc1f-252b48b4d3f9/sound_effects/weapon_pickup.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "gun_shoot",
+        "url": "https://cdn-game-mcp.gambo.ai/41625e09-a5d5-4884-a385-dc7584e11809/sound_effects/gun_shoot.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "boss_slam",
+        "url": "https://cdn-game-mcp.gambo.ai/28cba0b1-5c27-43a7-b43a-d6ba0e528457/sound_effects/boss_slam.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "boss_laser",
+        "url": "https://cdn-game-mcp.gambo.ai/7c838bc2-2801-46b0-9fb1-aecde33e34bb/sound_effects/boss_laser.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "boss_vulnerable",
+        "url": "https://cdn-game-mcp.gambo.ai/7fef8b31-12db-46ba-ad77-1c1291cb3bf0/sound_effects/boss_vulnerable.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "boss_roar",
+        "url": "https://cdn-game-mcp.gambo.ai/354416a9-56c6-4b60-af0d-4fcf9ed4d6bf/sound_effects/boss_roar.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "falling_wind",
+        "url": "https://cdn-game-mcp.gambo.ai/4c471399-7d03-4ea5-8a55-76e9780854a8/sound_effects/falling_wind.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "debris_whoosh",
+        "url": "https://cdn-game-mcp.gambo.ai/496769d1-511a-4892-99b9-a9a2d9958598/sound_effects/debris_whoosh.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "jetpack_boost",
+        "url": "https://cdn-game-mcp.gambo.ai/a8f52cd2-ef29-4823-80eb-90ca79f1f2a9/sound_effects/jetpack_boost.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "jetpack_pickup_sound",
+        "url": "https://cdn-game-mcp.gambo.ai/93a00a69-1513-4288-9765-5a981eb7bb8f/sound_effects/jetpack_pickup.mp3"
+      }
+    ]
+  },
+  "background_musics": {
+    "files": [
+      {
+        "type": "audio",
+        "key": "cave_exploration_theme",
+        "url": "https://cdn-game-mcp.gambo.ai/e0d70e17-758e-468d-8684-8041a860fa30/music/cave_exploration_theme.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "boss_battle_theme",
+        "url": "https://cdn-game-mcp.gambo.ai/848cab0f-0767-41f3-aa7f-8e94a71a626e/music/boss_battle_theme.mp3"
+      }
+    ]
+  },
+  "boss_assets": {
+    "files": [
+      {
+        "type": "image",
+        "key": "corrupted_boss_idle_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/9bf2694b-663a-42ef-928a-14fad3440eb0/animations/corrupted_boss_idle_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "corrupted_boss_idle_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/9e669af2-b13f-40b0-993e-8b8e2f708580/animations/corrupted_boss_idle_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "corrupted_boss_slam_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/3bc46e9d-cbe1-4d60-8553-1d99ba08c90e/animations/corrupted_boss_slam_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "corrupted_boss_slam_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/7f94a654-acde-4f14-9d23-ccbe80b344d8/animations/corrupted_boss_slam_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "corrupted_boss_vulnerable_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/d96b6700-c9f7-4524-bb57-9b3868b8bf1c/animations/corrupted_boss_vulnerable_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "corrupted_boss_vulnerable_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/1116b3e2-7fcf-4d29-ac85-7e78e52bc683/animations/corrupted_boss_vulnerable_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "corrupted_boss_die_R_frame1",
+        "url": "https://cdn-game-mcp.gambo.ai/96a274de-e6b5-4828-9e4f-f82ae8adc770/animations/corrupted_boss_die_R/frame_1.png"
+      },
+      {
+        "type": "image",
+        "key": "corrupted_boss_die_R_frame2",
+        "url": "https://cdn-game-mcp.gambo.ai/29e81ad1-bf88-4e41-b5de-76a3c9edb0bf/animations/corrupted_boss_die_R/frame_2.png"
+      },
+      {
+        "type": "image",
+        "key": "boss_arena_background",
+        "url": "https://cdn-game-mcp.gambo.ai/f7f9f895-d15f-46b3-8d27-82a99ecfeebb/images/boss_arena_background.png"
+      },
+      {
+        "type": "image",
+        "key": "shockwave_effect",
+        "url": "https://cdn-game-mcp.gambo.ai/ebbe8ad2-7615-46e3-8b5c-6d56d0ad5e0a/images/shockwave_effect.png"
+      },
+      {
+        "type": "image",
+        "key": "boss_laser",
+        "url": "https://cdn-game-mcp.gambo.ai/9910e396-373c-4cd5-ad1f-5e4630bfba77/images/boss_laser.png"
+      },
+      {
+        "type": "image",
+        "key": "vulnerable_core",
+        "url": "https://cdn-game-mcp.gambo.ai/1aad45d8-e816-4252-be63-3bcfd2fdf615/images/vulnerable_core.png"
+      }
+    ]
+  },
+  "falling_hazards": {
+    "files": [
+      {
+        "type": "image",
+        "key": "falling_spike",
+        "url": "https://cdn-game-mcp.gambo.ai/2f684afd-3427-4310-831c-784320067c85/images/falling_spike.png"
+      },
+      {
+        "type": "image",
+        "key": "falling_debris",
+        "url": "https://cdn-game-mcp.gambo.ai/c40024b2-e385-4fd2-b383-5a190f32a420/images/falling_debris.png"
+      },
+      {
+        "type": "image",
+        "key": "warning_indicator",
+        "url": "https://cdn-game-mcp.gambo.ai/a91a630c-bb18-4ea4-a7c4-af4a5b825d7d/images/warning_indicator.png"
+      }
+    ]
+  },
+  "meta": {
+    "app": "Gambo AI",
+    "version": 1,
+    "showAllFilesInBlocks": false
+  }
+}

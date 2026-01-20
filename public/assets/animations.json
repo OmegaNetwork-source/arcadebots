@@ -1,0 +1,1293 @@
+{
+  "anims": [
+    {
+      "key": "arcade_bot_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "arcade_bot_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "arcade_bot_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "arcade_bot_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "arcade_bot_walk_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "arcade_bot_walk_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "arcade_bot_jump_up_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "arcade_bot_jump_R_frame1",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.391,
+      "originY": 1.0
+    },
+    {
+      "key": "arcade_bot_jump_down_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "arcade_bot_jump_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.391,
+      "originY": 1.0
+    },
+    {
+      "key": "arcade_bot_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "arcade_bot_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "arcade_bot_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.226,
+      "originY": 1.0
+    },
+    {
+      "key": "arcade_bot_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "arcade_bot_die_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "arcade_bot_die_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.246,
+      "originY": 1.0
+    },
+    {
+      "key": "fire_arcade_bot_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "fire_arcade_bot_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "fire_arcade_bot_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "fire_arcade_bot_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "fire_arcade_bot_walk_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "fire_arcade_bot_walk_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.405,
+      "originY": 1.0
+    },
+    {
+      "key": "fire_arcade_bot_jump_up_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "fire_arcade_bot_jump_R_frame1",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.311,
+      "originY": 1.0
+    },
+    {
+      "key": "fire_arcade_bot_jump_down_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "fire_arcade_bot_jump_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.311,
+      "originY": 1.0
+    },
+    {
+      "key": "fire_arcade_bot_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "fire_arcade_bot_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "fire_arcade_bot_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.234,
+      "originY": 1.0
+    },
+    {
+      "key": "fire_arcade_bot_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "fire_arcade_bot_die_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "fire_arcade_bot_die_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.24,
+      "originY": 1.0
+    },
+    {
+      "key": "ice_arcade_bot_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "ice_arcade_bot_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "ice_arcade_bot_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "ice_arcade_bot_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "ice_arcade_bot_walk_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "ice_arcade_bot_walk_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.455,
+      "originY": 1.0
+    },
+    {
+      "key": "ice_arcade_bot_jump_up_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "ice_arcade_bot_jump_R_frame1",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.317,
+      "originY": 1.0
+    },
+    {
+      "key": "ice_arcade_bot_jump_down_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "ice_arcade_bot_jump_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.317,
+      "originY": 1.0
+    },
+    {
+      "key": "ice_arcade_bot_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "ice_arcade_bot_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "ice_arcade_bot_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.243,
+      "originY": 1.0
+    },
+    {
+      "key": "ice_arcade_bot_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "ice_arcade_bot_die_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "ice_arcade_bot_die_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.178,
+      "originY": 1.0
+    },
+    {
+      "key": "shadow_arcade_bot_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "shadow_arcade_bot_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "shadow_arcade_bot_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "shadow_arcade_bot_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "shadow_arcade_bot_walk_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "shadow_arcade_bot_walk_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.498,
+      "originY": 1.0
+    },
+    {
+      "key": "shadow_arcade_bot_jump_up_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "shadow_arcade_bot_jump_R_frame1",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.372,
+      "originY": 1.0
+    },
+    {
+      "key": "shadow_arcade_bot_jump_down_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "shadow_arcade_bot_jump_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.372,
+      "originY": 1.0
+    },
+    {
+      "key": "shadow_arcade_bot_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "shadow_arcade_bot_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "shadow_arcade_bot_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.206,
+      "originY": 1.0
+    },
+    {
+      "key": "shadow_arcade_bot_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "shadow_arcade_bot_die_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "shadow_arcade_bot_die_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.237,
+      "originY": 1.0
+    },
+    {
+      "key": "bug_enemy_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "bug_enemy_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "bug_enemy_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "bug_enemy_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "bug_enemy_idle_R_frame1",
+          "duration": 150
+        },
+        {
+          "key": "bug_enemy_idle_R_frame2",
+          "duration": 150
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "bug_enemy_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "bug_enemy_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "bug_enemy_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.313,
+      "originY": 1.0
+    },
+    {
+      "key": "bug_enemy_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "bug_enemy_die_R_frame1",
+          "duration": 200
+        },
+        {
+          "key": "bug_enemy_die_R_frame2",
+          "duration": 400
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.273,
+      "originY": 1.0
+    },
+    {
+      "key": "flying_bat_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "flying_bat_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "flying_bat_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "flying_bat_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "flying_bat_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "flying_bat_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.306,
+      "originY": 1.0
+    },
+    {
+      "key": "flying_bat_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "flying_bat_die_R_frame1",
+          "duration": 200
+        },
+        {
+          "key": "flying_bat_die_R_frame2",
+          "duration": 400
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.277,
+      "originY": 1.0
+    },
+    {
+      "key": "slime_crawler_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "slime_crawler_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "slime_crawler_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "slime_crawler_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "slime_crawler_idle_R_frame1",
+          "duration": 200
+        },
+        {
+          "key": "slime_crawler_idle_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "slime_crawler_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "slime_crawler_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "slime_crawler_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.32,
+      "originY": 1.0
+    },
+    {
+      "key": "slime_crawler_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "slime_crawler_die_R_frame1",
+          "duration": 200
+        },
+        {
+          "key": "slime_crawler_die_R_frame2",
+          "duration": 400
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.351,
+      "originY": 1.0
+    },
+    {
+      "key": "lightning_arcade_bot_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "lightning_arcade_bot_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "lightning_arcade_bot_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "lightning_arcade_bot_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "lightning_arcade_bot_walk_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "lightning_arcade_bot_walk_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.488,
+      "originY": 1.0
+    },
+    {
+      "key": "lightning_arcade_bot_jump_up_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "lightning_arcade_bot_jump_R_frame1",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.222,
+      "originY": 1.0
+    },
+    {
+      "key": "lightning_arcade_bot_jump_down_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "lightning_arcade_bot_jump_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.222,
+      "originY": 1.0
+    },
+    {
+      "key": "lightning_arcade_bot_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "lightning_arcade_bot_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "lightning_arcade_bot_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.195,
+      "originY": 1.0
+    },
+    {
+      "key": "lightning_arcade_bot_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "lightning_arcade_bot_die_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "lightning_arcade_bot_die_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.216,
+      "originY": 1.0
+    },
+    {
+      "key": "nature_arcade_bot_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "nature_arcade_bot_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "nature_arcade_bot_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "nature_arcade_bot_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "nature_arcade_bot_walk_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "nature_arcade_bot_walk_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.475,
+      "originY": 1.0
+    },
+    {
+      "key": "nature_arcade_bot_jump_up_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "nature_arcade_bot_jump_R_frame1",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.261,
+      "originY": 1.0
+    },
+    {
+      "key": "nature_arcade_bot_jump_down_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "nature_arcade_bot_jump_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.261,
+      "originY": 1.0
+    },
+    {
+      "key": "nature_arcade_bot_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "nature_arcade_bot_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "nature_arcade_bot_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.241,
+      "originY": 1.0
+    },
+    {
+      "key": "nature_arcade_bot_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "nature_arcade_bot_die_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "nature_arcade_bot_die_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.205,
+      "originY": 1.0
+    },
+    {
+      "key": "cosmic_arcade_bot_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "cosmic_arcade_bot_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "cosmic_arcade_bot_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "cosmic_arcade_bot_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "cosmic_arcade_bot_walk_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "cosmic_arcade_bot_walk_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.482,
+      "originY": 1.0
+    },
+    {
+      "key": "cosmic_arcade_bot_jump_up_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "cosmic_arcade_bot_jump_R_frame1",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.263,
+      "originY": 1.0
+    },
+    {
+      "key": "cosmic_arcade_bot_jump_down_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "cosmic_arcade_bot_jump_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.263,
+      "originY": 1.0
+    },
+    {
+      "key": "cosmic_arcade_bot_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "cosmic_arcade_bot_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "cosmic_arcade_bot_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.214,
+      "originY": 1.0
+    },
+    {
+      "key": "cosmic_arcade_bot_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "cosmic_arcade_bot_die_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "cosmic_arcade_bot_die_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.222,
+      "originY": 1.0
+    },
+    {
+      "key": "goku_arcade_bot_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "goku_arcade_bot_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "goku_arcade_bot_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "goku_arcade_bot_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "goku_arcade_bot_walk_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "goku_arcade_bot_walk_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.478,
+      "originY": 1.0
+    },
+    {
+      "key": "goku_arcade_bot_jump_up_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "goku_arcade_bot_jump_R_frame1",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.382,
+      "originY": 1.0
+    },
+    {
+      "key": "goku_arcade_bot_jump_down_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "goku_arcade_bot_jump_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.382,
+      "originY": 1.0
+    },
+    {
+      "key": "goku_arcade_bot_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "goku_arcade_bot_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "goku_arcade_bot_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.201,
+      "originY": 1.0
+    },
+    {
+      "key": "goku_arcade_bot_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "goku_arcade_bot_die_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "goku_arcade_bot_die_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.227,
+      "originY": 1.0
+    },
+    {
+      "key": "grim_reaper_arcade_bot_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "grim_reaper_arcade_bot_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "grim_reaper_arcade_bot_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "grim_reaper_arcade_bot_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "grim_reaper_arcade_bot_walk_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "grim_reaper_arcade_bot_walk_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "grim_reaper_arcade_bot_jump_up_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "grim_reaper_arcade_bot_jump_R_frame1",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.433,
+      "originY": 1.0
+    },
+    {
+      "key": "grim_reaper_arcade_bot_jump_down_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "grim_reaper_arcade_bot_jump_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.433,
+      "originY": 1.0
+    },
+    {
+      "key": "grim_reaper_arcade_bot_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "grim_reaper_arcade_bot_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "grim_reaper_arcade_bot_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.29,
+      "originY": 1.0
+    },
+    {
+      "key": "grim_reaper_arcade_bot_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "grim_reaper_arcade_bot_die_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "grim_reaper_arcade_bot_die_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.303,
+      "originY": 1.0
+    },
+    {
+      "key": "angel_arcade_bot_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "angel_arcade_bot_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "angel_arcade_bot_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "angel_arcade_bot_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "angel_arcade_bot_walk_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "angel_arcade_bot_walk_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.443,
+      "originY": 1.0
+    },
+    {
+      "key": "angel_arcade_bot_jump_up_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "angel_arcade_bot_jump_R_frame1",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.304,
+      "originY": 1.0
+    },
+    {
+      "key": "angel_arcade_bot_jump_down_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "angel_arcade_bot_jump_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.304,
+      "originY": 1.0
+    },
+    {
+      "key": "angel_arcade_bot_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "angel_arcade_bot_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "angel_arcade_bot_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.264,
+      "originY": 1.0
+    },
+    {
+      "key": "angel_arcade_bot_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "angel_arcade_bot_die_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "angel_arcade_bot_die_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.281,
+      "originY": 1.0
+    },
+    {
+      "key": "devil_arcade_bot_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "devil_arcade_bot_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "devil_arcade_bot_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "devil_arcade_bot_walk_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "devil_arcade_bot_walk_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "devil_arcade_bot_walk_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.482,
+      "originY": 1.0
+    },
+    {
+      "key": "devil_arcade_bot_jump_up_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "devil_arcade_bot_jump_R_frame1",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.337,
+      "originY": 1.0
+    },
+    {
+      "key": "devil_arcade_bot_jump_down_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "devil_arcade_bot_jump_R_frame2",
+          "duration": 200
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.337,
+      "originY": 1.0
+    },
+    {
+      "key": "devil_arcade_bot_attack_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "devil_arcade_bot_attack_R_frame1",
+          "duration": 50
+        },
+        {
+          "key": "devil_arcade_bot_attack_R_frame2",
+          "duration": 100
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.228,
+      "originY": 1.0
+    },
+    {
+      "key": "devil_arcade_bot_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "devil_arcade_bot_die_R_frame1",
+          "duration": 300
+        },
+        {
+          "key": "devil_arcade_bot_die_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.306,
+      "originY": 1.0
+    },
+    {
+      "key": "corrupted_boss_idle_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "corrupted_boss_idle_R_frame1",
+          "duration": 800
+        },
+        {
+          "key": "corrupted_boss_idle_R_frame2",
+          "duration": 800
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.5,
+      "originY": 1.0
+    },
+    {
+      "key": "corrupted_boss_slam_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "corrupted_boss_slam_R_frame1",
+          "duration": 200
+        },
+        {
+          "key": "corrupted_boss_slam_R_frame2",
+          "duration": 300
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.3,
+      "originY": 1.0
+    },
+    {
+      "key": "corrupted_boss_vulnerable_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "corrupted_boss_vulnerable_R_frame1",
+          "duration": 500
+        },
+        {
+          "key": "corrupted_boss_vulnerable_R_frame2",
+          "duration": 500
+        }
+      ],
+      "repeat": -1,
+      "originX": 0.379,
+      "originY": 1.0
+    },
+    {
+      "key": "corrupted_boss_die_anim",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "corrupted_boss_die_R_frame1",
+          "duration": 400
+        },
+        {
+          "key": "corrupted_boss_die_R_frame2",
+          "duration": 600
+        }
+      ],
+      "repeat": 0,
+      "originX": 0.287,
+      "originY": 1.0
+    }
+  ]
+}

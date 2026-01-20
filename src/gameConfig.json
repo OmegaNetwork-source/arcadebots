@@ -1,0 +1,122 @@
+{
+  "screenSize": {
+    "width": {
+      "value": 1152,
+      "type": "number",
+      "description": "Screen width"
+    },
+    "height": {
+      "value": 768,
+      "type": "number",
+      "description": "Screen height"
+    }
+  },
+  "debugConfig": {
+    "debug": {
+      "value": false,
+      "type": "boolean",
+      "description": "Enable debug mode"
+    }
+  },
+  "renderConfig": {
+    "pixelArt": {
+      "value": false,
+      "type": "boolean",
+      "description": "Whether to enable pixel art rendering - set to false for hand-painted style"
+    }
+  },
+  "playerConfig": {
+    "maxHealth": {
+      "value": 100,
+      "type": "number",
+      "description": "Player maximum health"
+    },
+    "walkSpeed": {
+      "value": 260,
+      "type": "number",
+      "description": "Player walking speed"
+    },
+    "jumpPower": {
+      "value": 700,
+      "type": "number",
+      "description": "Player jump power"
+    },
+    "gravityY": {
+      "value": 1200,
+      "type": "number",
+      "description": "Player gravity"
+    },
+    "attackDamage": {
+      "value": 40,
+      "type": "number",
+      "description": "Player melee attack damage"
+    },
+    "attackRange": {
+      "value": 80,
+      "type": "number",
+      "description": "Player melee attack range"
+    },
+    "attackWidth": {
+      "value": 60,
+      "type": "number",
+      "description": "Player melee attack width"
+    },
+    "hurtingDuration": {
+      "value": 100,
+      "type": "number",
+      "description": "Player hurt stun duration in ms"
+    },
+    "invulnerableTime": {
+      "value": 1000,
+      "type": "number",
+      "description": "Player invulnerable time after being hit in ms"
+    }
+  },
+  "enemyConfig": {
+    "maxHealth": {
+      "value": 60,
+      "type": "number",
+      "description": "Enemy maximum health"
+    },
+    "walkSpeed": {
+      "value": 100,
+      "type": "number",
+      "description": "Enemy walking speed"
+    },
+    "gravityY": {
+      "value": 1200,
+      "type": "number",
+      "description": "Enemy gravity"
+    },
+    "attackDamage": {
+      "value": 20,
+      "type": "number",
+      "description": "Enemy attack damage"
+    },
+    "attackRange": {
+      "value": 60,
+      "type": "number",
+      "description": "Enemy melee attack range"
+    },
+    "attackWidth": {
+      "value": 50,
+      "type": "number",
+      "description": "Enemy melee attack width"
+    },
+    "attackCooldown": {
+      "value": 4000,
+      "type": "number",
+      "description": "Enemy attack cooldown in ms"
+    },
+    "detectionRange": {
+      "value": 300,
+      "type": "number",
+      "description": "Enemy player detection range"
+    },
+    "contactDamage": {
+      "value": 15,
+      "type": "number",
+      "description": "Damage dealt by touching the enemy"
+    }
+  }
+}
