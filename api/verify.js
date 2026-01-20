@@ -5,7 +5,7 @@ import { createClient } from '@supabase/supabase-js';
 
 // Initialize Supabase client
 const supabaseUrl = process.env.SUPABASE_URL || '';
-const supabaseKey = process.env.SUPABASE_ANON_KEY || '';
+const supabaseKey = process.env.SUPABASE_SERVICE_KEY || '';
 
 // Quest threshold - score needed to complete quest
 const QUEST_SCORE_THRESHOLD = 5000;
