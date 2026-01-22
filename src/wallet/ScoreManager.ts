@@ -265,9 +265,9 @@ class ScoreManager {
                 },
                 body: JSON.stringify({
                     wallet: wallet,
-                    totalScore: stats.totalScore,
+                    game: 'arcade_bot',
+                    score: stats.score, // Current session score to add
                     highScore: stats.highScore,
-                    bossesDefeated: stats.bossesDefeated,
                     gamesPlayed: stats.gamesPlayed,
                 }),
             });
