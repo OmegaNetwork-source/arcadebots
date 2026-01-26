@@ -26,6 +26,12 @@ export class VictoryUIScene extends Phaser.Scene {
     this.createDOMUI();
     // Setup input controls
     this.setupInputs();
+
+    // Show sync status shortly after entering
+    setTimeout(() => {
+      const syncEl = document.getElementById('sync-status');
+      if (syncEl) syncEl.style.opacity = '1';
+    }, 1000);
   }
 
   goToNextLevelWithSound(): void {
@@ -60,6 +66,13 @@ export class VictoryUIScene extends Phaser.Scene {
             animation: blink 0.8s ease-in-out infinite alternate;
           ">PRESS ENTER FOR NEXT LEVEL</div>
 
+          <!-- Blockchain Sync Status -->
+          <div id="sync-status" class="text-cyan-400 font-bold opacity-0 transition-opacity duration-500" style="
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 0px #000;
+          ">Securing progress on Somnia...</div>
         </div>
 
         <!-- Custom Animations -->
@@ -90,7 +103,7 @@ export class VictoryUIScene extends Phaser.Scene {
   setupInputs(): void {
     // Clear previous event listeners
     this.input.off('pointerdown');
-    
+
     // Create keyboard input
     this.enterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
     this.spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
@@ -135,7 +148,7 @@ export class VictoryUIScene extends Phaser.Scene {
     // Stop all game-related scenes
     this.scene.stop("UIScene");
     this.scene.stop(this.currentLevelKey!);
-    
+
     // Start next level
     this.scene.start(nextLevelKey);
   }

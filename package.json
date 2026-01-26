@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "phaser": "3.90.0",
-    "phaser3-rex-plugins": "^1.80.17"
+    "phaser3-rex-plugins": "^1.80.17",
+    "ethers": "^5.7.2"
   },
   "devDependencies": {
     "@supabase/supabase-js": "^2.91.0",
