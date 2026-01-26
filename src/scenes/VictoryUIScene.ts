@@ -26,12 +26,6 @@ export class VictoryUIScene extends Phaser.Scene {
     this.createDOMUI();
     // Setup input controls
     this.setupInputs();
-
-    // Show sync status shortly after entering
-    setTimeout(() => {
-      const syncEl = document.getElementById('sync-status');
-      if (syncEl) syncEl.style.opacity = '1';
-    }, 1000);
   }
 
   goToNextLevelWithSound(): void {
@@ -66,13 +60,6 @@ export class VictoryUIScene extends Phaser.Scene {
             animation: blink 0.8s ease-in-out infinite alternate;
           ">PRESS ENTER FOR NEXT LEVEL</div>
 
-          <!-- Blockchain Sync Status -->
-          <div id="sync-status" class="text-cyan-400 font-bold opacity-0 transition-opacity duration-500" style="
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 1px 1px 0px #000;
-          ">Securing progress on Somnia...</div>
         </div>
 
         <!-- Custom Animations -->

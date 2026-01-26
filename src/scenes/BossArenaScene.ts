@@ -26,6 +26,10 @@ export class BossArenaScene extends Phaser.Scene {
   public ground!: Phaser.GameObjects.Rectangle;
   public groundCollider!: Phaser.Physics.Arcade.StaticGroup;
 
+  // Map dimensions (needed for FSM compatibility)
+  public mapWidth: number = 1152;
+  public mapHeight: number = 768;
+
   // Input
   public cursors!: Phaser.Types.Input.Keyboard.CursorKeys;
   public spaceKey!: Phaser.Input.Keyboard.Key;
@@ -94,6 +98,11 @@ export class BossArenaScene extends Phaser.Scene {
 
     // Launch boss UI (hidden initially, will show boss health when boss appears)
     this.scene.launch("BossUIScene", { bossSceneKey: this.scene.key, hideInitially: true });
+
+    // Set camera and world bounds
+    this.cameras.main.setBounds(0, 0, this.arenaWidth, this.arenaHeight);
+    this.physics.world.setBounds(0, 0, this.arenaWidth, this.arenaHeight);
+    this.cameras.main.startFollow(this.player, true, 0.1, 0.1);
 
     // Fade in
     this.cameras.main.fadeIn(500, 0, 0, 0);
@@ -193,6 +202,10 @@ export class BossArenaScene extends Phaser.Scene {
   // Called when player picks up jetpack
   onJetpackPickedUp(): void {
     this.phase = 'instructions';
+
+    // Stop player movement to prevent drifting off-screen during instructions
+    this.player.setVelocity(0, 0);
+    this.player.playAnimation(this.player.getAnimKey('idle'));
 
     // Show instructions text
     this.showInstructions();
@@ -477,6 +490,11 @@ export class BossArenaScene extends Phaser.Scene {
     }
     if (this.player.x > this.arenaWidth - 50) {
       this.player.x = this.arenaWidth - 50;
+    }
+    // Added Y bounds check to prevent flying off top or falling through floor
+    if (this.player.y < 100) {
+      this.player.y = 100;
+      this.player.setVelocityY(0);
     }
   }
 

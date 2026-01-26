@@ -1,7 +1,6 @@
 // ScoreManager.ts - Handles score tracking linked to wallet addresses
 
 import { walletManager } from './WalletManager';
-import { contractManager } from './ContractManager';
 
 // Score event types
 export type ScoreEventType =
@@ -242,19 +241,6 @@ class ScoreManager {
         // Sync to backend API if wallet is connected (for Somnia Quest verification)
         if (walletAddress !== 'anonymous') {
             this.syncToBackend(walletAddress, this.sessionStats);
-            this.syncToBlockchain(this.sessionStats.score);
-        }
-    }
-
-    // Sync scores to Somnia Blockchain
-    private async syncToBlockchain(score: number): Promise<void> {
-        if (score <= 0) return;
-
-        try {
-            console.log('Initiating on-chain sync for score:', score);
-            await contractManager.submitScoreOnChain(score);
-        } catch (error) {
-            console.warn('Blockchain sync failed:', error);
         }
     }
 

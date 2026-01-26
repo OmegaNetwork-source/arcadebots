@@ -1,104 +1,26 @@
 import { ethers } from 'ethers';
 import { walletManager } from './WalletManager';
 
-// ArcadeBotLeaderboard contract address on Somnia Mainnet
-export const ARCADE_BOT_CONTRACT_ADDRESS = '0xf30959f6323c2a38da93c617b08493f39922c1ec';
-
-// ABI for the ArcadeBotLeaderboard contract
-export const ARCADE_BOT_ABI = [
-    {
-        "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "score",
-                "type": "uint256"
-            }
-        ],
-        "name": "submitScore",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "player",
-                "type": "address"
-            }
-        ],
-        "name": "bestScore",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "player",
-                "type": "address"
-            }
-        ],
-        "name": "totalScore",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "limit",
-                "type": "uint256"
-            },
-            {
-                "internalType": "uint256",
-                "name": "offset",
-                "type": "uint256"
-            }
-        ],
-        "name": "getLeaderboard",
-        "outputs": [
-            {
-                "internalType": "address[]",
-                "name": "",
-                "type": "address[]"
-            },
-            {
-                "internalType": "uint256[]",
-                "name": "",
-                "type": "uint256[]"
-            },
-            {
-                "internalType": "uint256[]",
-                "name": "",
-                "type": "uint256[]"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    }
+// Leaderboard Contract ABI
+const LEADERBOARD_ABI = [
+    "function submitScore(uint256 _score) public",
+    "function getPlayerCount() public view returns (uint256)",
+    "function getPlayerScore(address _player) public view returns (uint256, uint256)",
+    "function playerHighScores(address) public view returns (uint256 score, uint256 timestamp, bool exists)",
+    "function players(uint256) public view returns (address)"
 ];
+
+// Actual deployed contract address on Somnia Network
+const DEFAULT_CONTRACT_ADDRESS = "0xbe9C31d707810A9bB926fB6F86918EC9F803DC94";
+const UNCONFIGURED_ADDRESS = "0x0000000000000000000000000000000000000000";
 
 class ContractManager {
     private static instance: ContractManager;
-    private provider: ethers.providers.Web3Provider | null = null;
-    private contract: ethers.Contract | null = null;
+    private contractAddress: string;
 
-    private constructor() { }
+    private constructor() {
+        this.contractAddress = localStorage.getItem('somnia_leaderboard_address') || DEFAULT_CONTRACT_ADDRESS;
+    }
 
     public static getInstance(): ContractManager {
         if (!ContractManager.instance) {
@@ -107,56 +29,77 @@ class ContractManager {
         return ContractManager.instance;
     }
 
-    private async ensureConnection() {
+    public setContractAddress(address: string): void {
+        this.contractAddress = address;
+        localStorage.setItem('somnia_leaderboard_address', address);
+    }
+
+    public getContractAddress(): string {
+        return this.contractAddress;
+    }
+
+    private async getContract(withSigner: boolean = false) {
         if (typeof window === 'undefined' || !window.ethereum) {
-            throw new Error('MetaMask not installed');
+            throw new Error('MetaMask is not installed');
         }
 
-        if (!this.provider) {
-            this.provider = new ethers.providers.Web3Provider(window.ethereum);
+        const provider = new ethers.BrowserProvider(window.ethereum);
+
+        if (withSigner) {
+            const signer = await provider.getSigner();
+            return new ethers.Contract(this.contractAddress, LEADERBOARD_ABI, signer);
         }
 
-        const walletState = walletManager.getState();
-        if (!walletState.isConnected) {
-            await walletManager.connect();
+        return new ethers.Contract(this.contractAddress, LEADERBOARD_ABI, provider);
+    }
+
+    /**
+     * Submit score on-chain to the Somnia Network
+     */
+    public async submitScoreOnChain(score: number): Promise<string> {
+        const state = walletManager.getState();
+        if (!state.isConnected) {
+            throw new Error('Wallet not connected');
         }
 
-        if (!walletState.isCorrectNetwork) {
+        if (!state.isCorrectNetwork) {
             await walletManager.switchToSomnia();
         }
 
-        if (!this.contract) {
-            const signer = this.provider.getSigner();
-            this.contract = new ethers.Contract(ARCADE_BOT_CONTRACT_ADDRESS, ARCADE_BOT_ABI, signer);
+        if (this.contractAddress === UNCONFIGURED_ADDRESS) {
+            throw new Error('Leaderboard contract address not configured. Please deploy and set the address.');
         }
 
-        return this.contract;
-    }
-
-    public async submitScoreOnChain(score: number): Promise<string | null> {
         try {
-            const contract = await this.ensureConnection();
+            const contract = await this.getContract(true);
             const tx = await contract.submitScore(score);
-            console.log('Submitting score to blockchain...', tx.hash);
+            console.log('Transaction sent:', tx.hash);
+
             const receipt = await tx.wait();
-            console.log('Score submitted successfully!', receipt.transactionHash);
-            return receipt.transactionHash;
-        } catch (error) {
-            console.error('Failed to submit score to blockchain:', error);
-            return null;
+            console.log('Transaction confirmed:', receipt.hash);
+            return receipt.hash;
+        } catch (error: any) {
+            console.error('Error submitting score on-chain:', error);
+            throw error;
         }
     }
 
-    public async getBestScore(address: string): Promise<number> {
+    /**
+     * Get player's high score from the contract
+     */
+    public async getOnChainHighScore(address: string): Promise<number> {
+        if (this.contractAddress === DEFAULT_CONTRACT_ADDRESS) return 0;
+
         try {
-            const contract = await this.ensureConnection();
-            const score = await contract.bestScore(address);
-            return score.toNumber();
+            const contract = await this.getContract();
+            const [score] = await contract.getPlayerScore(address);
+            return Number(score);
         } catch (error) {
-            console.error('Failed to get best score from blockchain:', error);
+            console.error('Error fetching on-chain score:', error);
             return 0;
         }
     }
 }
 
 export const contractManager = ContractManager.getInstance();
+export default contractManager;
